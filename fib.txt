@@ -15,7 +15,9 @@ int main()
 { 
   int sum=0; 
   int n,i; 
-  cin>>n; 
+  cin>>n;
+  if(n<=0)
+     cout<<"please input a positive integer" ;
   for(i=1;i<=n;i++) 
      sum+=fibonacci(i); 
      cout<<"fib n is"<<sum<<endl; 
