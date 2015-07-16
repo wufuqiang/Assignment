@@ -25,12 +25,13 @@ public class FileOpe {
 				FileWriter wf = new FileWriter("f.txt");
 				n = System.in.read(b);
 				for (i = 0; i < n; i++)
-					c[i] = (char) b[i];
+				c[i] = (char) b[i];
 				wf.write(c);
 				wf.close();
 			} catch (IOException e) {
 				System.out.print(e);
 			}
+			break;
 		}
 		case 2: {
 			String s = "";
@@ -39,13 +40,14 @@ public class FileOpe {
 				BufferedReader brf = new BufferedReader(rf);
 				String rs = "";
 				while ((rs = brf.readLine()) != null)
-					s = s + rs + "\n";
+				s = s + rs + "\n";
 				// brf.close;
 				rf.close();
 			} catch (IOException e) {
 				System.out.println(e);
 			}
 			System.out.print(s);
+			break;
 		}
 		case 3: {
 			System.out.print("please input the index");
@@ -58,12 +60,13 @@ public class FileOpe {
 				FileWriter wf = new FileWriter("f.txt");
 				n = System.in.read(b);
 				for (i = index; i < n; i++)
-					c[i] = (char) b[i];
+				c[i] = (char) b[i];
 				wf.write(c);
 				wf.close();
 			} catch (IOException e) {
 				System.out.print(e);
 			}
+			break;
 		}
 		case 4: {
 			System.out.print("please input the index");
@@ -76,12 +79,13 @@ public class FileOpe {
 			try {
 				FileWriter wf = new FileWriter("f.txt");
 				for (int i = index; i < length; i++)
-					c[i] = ' ';
+				c[i] = ' ';
 				wf.write(c);
 				wf.close();
 			} catch (IOException e) {
 				System.out.print(e);
 			}
+			break;
 		}
 		}
 	}
