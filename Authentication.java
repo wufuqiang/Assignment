@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class JAVATEST {
 	public static void main(String[] args) {
 		int i = 0;
-		System.out.print("ÇëÊäÈëºÅÂë");
+		System.out.print("è¯·è¾“å…¥å·ç ");
 		Scanner scan = new Scanner(System.in);
 		String id = scan.nextLine();
 		int n = id.length();
@@ -13,13 +13,15 @@ public class JAVATEST {
 		if (n == 18) {
 			if (id.charAt(17) == 'x' || id.charAt(17) == 'X') {
 				if (xIdentify(id)) {
-					System.out.print("ÑéÖ¤³É¹¦");
-				}
+					System.out.print("éªŒè¯æˆåŠŸ");
+				}else
+				System.ott.print("éªŒè¯å¤±è´¥")ï¼›
 			} else if (nIdentify(id)) {
-				System.out.print("ÑéÖ¤³É¹¦");
-			}
+				System.out.print("éªŒè¯æˆåŠŸ");
+			}else
+			System.out.print("éªŒè¯å¤±è´¥")ï¼›
 		} else
-			System.out.print("ÑéÖ¤Ê§°Ü");
+			System.out.print("éªŒè¯å¤±è´¥");
 	}
 
 	public static boolean xIdentify(String id) {
@@ -43,7 +45,7 @@ public class JAVATEST {
 		int sum = 0;
 		char[] wi = { 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2 };
 		if ((id.charAt(i) < '0') && (id.charAt(i) > '9')) {
-			System.out.print("´íÎó");
+			System.out.print("é”™è¯¯");
 		}
 		for (i = 0; i < 17; i++) {
 			char ch = id.charAt(i);
