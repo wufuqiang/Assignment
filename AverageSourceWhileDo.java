@@ -12,13 +12,13 @@ public static void main(String[] args) {
    Scanner sc = new Scanner(System.in);
    System.out.println("please input score and end with #");
    while (score!= '#'){
-	   System.out.print("please input score£º");
+       System.out.print("please input scoreÂ£Âº");
        score = sc.nextInt();
        sum += score;
        count ++;
       } 
    
-      System.out.println( + --count + "students' total score:" + sum + "£¬and average score :23" + (double)sum / count);
+      System.out.println( + --count + "students' total score:" + sum + "Â£Â¬and average score :23" + (double)sum / count);
    }
 
 }

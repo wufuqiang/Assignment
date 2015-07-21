@@ -12,7 +12,7 @@ public class ReadFile {
 while((rs=brf.readLine())!=null)
 	s=s+rs+"\n";
  //   brf.close;
-    rf.close();
+        rf.close();
 	}
 	catch(IOException e){
 		System.out.println(e);
