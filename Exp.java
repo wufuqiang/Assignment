@@ -23,18 +23,18 @@ public static void main(String[] args){
 private static boolean checkName(String str) {
 	if(str.matches("[a-zA-Z]+\\s*[a-zA-Z]*\\s+[a-zA-Z]+\\s*")){
 	       return true;
-		}else return false;
+	}else return false;
 }
 
 private static boolean checkMail(String str) {
 	if(str.matches("^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$")){
-       return true;
+               return true;
 	}else return false;
 }
 
 private static boolean checkPostCode(String str) {
 	if(str.matches("[0-9]{6}")){
-		return true;
+	     return true;
 	}else return false;
 
 }
@@ -42,6 +42,6 @@ private static boolean checkPostCode(String str) {
 private static boolean checkPhone(String str) {
 	if(str.matches("[1][0-9]{10}")){
                 return true;
-                   }else return false;
+          }else return false;
 }
 }
