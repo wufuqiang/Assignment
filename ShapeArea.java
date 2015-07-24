@@ -17,8 +17,8 @@ public double area(float a,float b,float c){
 	
 }
 public static void main(String[] args){
-	ShapeArea sh=new ShapeArea();
-	System.out.print("please input the number of circle");
+    ShapeArea sh=new ShapeArea();
+    System.out.print("please input the number of circle");
     Scanner san=new Scanner(System.in);
     int a=san.nextInt();
     System.out.print("please input the number of square");
